@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.usu.a02305794.shoppinglist.View.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_analytics"
+            app:destination="@id/AnalyticsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_currentTrip"
+            app:destination="@id/CurrentTripFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_newListFragment"
+            app:destination="@id/newListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CurrentTripFragment"
+        android:name="com.usu.a02305794.shoppinglist.View.CurrentTripFragment"
+        android:label="fragment_current_trip"
+        tools:layout="@layout/fragment_current_trip" >
+        <action
+            android:id="@+id/action_currentTrip_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_CurrentTripFragment_to_fragment_new_item"
+            app:destination="@id/fragment_new_item" />
+    </fragment>
+    <fragment
+        android:id="@+id/AnalyticsFragment"
+        android:name="com.usu.a02305794.shoppinglist.View.analytics"
+        android:label="fragment_analytics"
+        tools:layout="@layout/fragment_analytics" >
+        <action
+            android:id="@+id/action_analytics_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newListFragment"
+        android:name="com.usu.a02305794.shoppinglist.View.NewListFragment"
+        android:label="fragment_new_list"
+        tools:layout="@layout/fragment_new_list" >
+        <action
+            android:id="@+id/action_newListFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_newListFragment_to_CurrentTripFragment"
+            app:destination="@id/CurrentTripFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_new_item"
+        android:name="com.usu.a02305794.shoppinglist.View.NewItemFragment"
+        android:label="fragment_new_item"
+        tools:layout="@layout/fragment_new_item" >
+        <action
+            android:id="@+id/action_fragment_new_item_to_CurrentTripFragment"
+            app:destination="@id/CurrentTripFragment"
+            app:popUpTo="@id/CurrentTripFragment" />
+    </fragment>
+</navigation>

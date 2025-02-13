@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Shawn/Desktop/shoppinglist2/app/src/main/res/layout/fragment_items_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/Shawn/Desktop/shoppinglist2/app/src/main/res/layout/fragment_new_item.xml" value="0.1522289766970618" />
+        <entry key="..\:/Users/Shawn/Desktop/shoppinglist2/app/src/main/res/layout/item_item.xml" value="0.1522289766970618" />
+        <entry key="..\:/Users/aggie/Documents/USU/SP22/CS2410/shoppinglist2/app/src/main/res/layout/fragment_items_fragment.xml" value="0.22604166666666667" />
+        <entry key="..\:/Users/aggie/Documents/USU/SP22/CS2410/shoppinglist2/app/src/main/res/layout/fragment_new_grocery_list.xml" value="0.22604166666666667" />
+        <entry key="..\:/Users/aggie/Documents/USU/SP22/CS2410/shoppinglist2/app/src/main/res/layout/fragment_new_todo.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
